@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="company" type="rohini.testapp.model.Company"/>
+    </data>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_new_employee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="rohini.testapp.activities.NewEmployeeActivity">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:text="@{company.name}"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/employee_first_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlue"
+            android:text="@string/label_first_name"
+            />
+
+        <EditText
+            android:id="@+id/employee_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:hint="@string/hint_first_name"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/employee_last_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlue"
+            android:text="@string/label_last_name"
+            />
+
+        <EditText
+            android:id="@+id/employee_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:hint="@string/hint_last_name"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/employee_age_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlue"
+            android:text="@string/label_age"
+            />
+
+        <EditText
+            android:id="@+id/employee_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:hint="@string/hint_age"
+            />
+   </LinearLayout>
+</layout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Main Activity -->
+    <string name="main_activity">Companies</string>
+
+    <!--Create New Company Activity -->
+    <string name="create_company_activity">Create New Company</string>
+    <string name="hint_enter_company">Enter company name</string>
+    <string name="hint_enter_company_address">Enter company address</string>
+    <string name="hint_missing_company_details">"Please enter values for all fields to create new company"</string>
+    <string name="hint_company_deleted">"Company deleted"</string>
+
+    <!--Display Company Details Activity-->
+    <string name="company_details_activity">Company Details</string>
+    <string name="label_company_name">Name</string>
+    <string name="label_company_address">Address</string>
+    <string name="employees">Employees</string>
+    <string name="hint_missing_employee_details">"Please enter values for all fields to create new employee"</string>
+    <string name="hint_employee_deleted">"Employee deleted"</string>
+
+    <!--Create New Employee Activity -->
+    <string name="create_new_employee_activity">Create New Employee</string>
+    <string name="label_first_name">First Name</string>
+    <string name="label_last_name">Last Name</string>
+    <string name="label_age">Age</string>
+    <string name="hint_first_name">Enter employee first name</string>
+    <string name="hint_last_name">Enter employee last name</string>
+    <string name="hint_age">Enter employee age</string>
+
+    <!--Display Employee Details Activity -->
+    <string name="employee_details_activity">Employee Details</string>
+
+    <string name="done">DONE</string>
+    <string name="delete">DELETE</string>
+</resources>

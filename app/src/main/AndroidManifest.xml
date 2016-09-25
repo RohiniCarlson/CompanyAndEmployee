@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rohini.testapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/main_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.NewCompanyActivity"
+            android:label="@string/create_company_activity"></activity>
+        <activity
+            android:name=".activities.CompanyDetailsActivity"
+            android:label="@string/company_details_activity"></activity>
+        <activity
+            android:name=".activities.NewEmployeeActivity"
+            android:label="@string/create_new_employee_activity"></activity>
+        <activity android:name=".activities.EmployeeDetailsActivity"
+            android:label="@string/employee_details_activity">
+        </activity>
+    </application>
+
+</manifest>

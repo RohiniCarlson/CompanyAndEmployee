@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="employee" type="rohini.testapp.model.Employee"/>
+    </data>
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_employee_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="rohini.testapp.activities.EmployeeDetailsActivity">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/employee_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:text="@{employee.firstName + ' ' + employee.lastName}"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/employee_detail_age_label"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/label_age"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/employee_detail_age"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorBlack"
+                android:text="@{Integer.toString(employee.age)}"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

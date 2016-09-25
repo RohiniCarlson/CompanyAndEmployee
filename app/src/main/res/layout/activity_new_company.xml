@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_company"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="rohini.testapp.activities.NewCompanyActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/company_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:text="@string/label_company_name"
+        />
+
+    <EditText
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:hint="@string/hint_enter_company"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/company_addr_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:text="@string/label_company_address"
+        />
+
+    <EditText
+        android:id="@+id/company_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:minLines="1"
+        android:maxLines="7"
+        android:textColor="@color/colorBlack"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:hint="@string/hint_enter_company_address"
+        />
+</LinearLayout>
